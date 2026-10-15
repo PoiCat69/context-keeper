@@ -1,0 +1,40 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*.json
+secrets.*
+*.secret
+.npmrc
+.pypirc
+
+# Local configuration
+*.local
+.claude/settings.local.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+node_modules/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
