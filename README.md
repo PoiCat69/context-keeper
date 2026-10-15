@@ -1,11 +1,11 @@
-# session-usage-handoff
+﻿# session-usage-handoff
 
 An agent skill that helps an AI coding assistant check how much token/quota budget is left, save its work to a Markdown handoff file (default `PROGRESS.md`) before limits run out, and resume cleanly in a new session.
 
 ## Features
 
 - **Usage check:** uses exact runtime metrics when the environment exposes them; otherwise estimates from session depth and labels the result as an estimate. It never invents exact numbers.
-- **Threshold actions:** Safe (>30% remaining), Caution (15–30%), Critical (<15% or a quota warning).
+- **Threshold actions:** Safe (>30% remaining), Caution (15â€“30%), Critical (<15% or a quota warning).
 - **Checkpointing:** writes or updates a structured handoff file without blindly overwriting earlier context.
 - **Resume:** reads the handoff file first, verifies the workspace, then continues from "Immediate Next Steps".
 
@@ -13,13 +13,13 @@ An agent skill that helps an AI coding assistant check how much token/quota budg
 
 ```text
 .
-├── skills/session-usage-handoff/skill.md   # the skill (canonical)
-├── skills.md                               # original file, kept unchanged for reference
-├── scripts/validate.py                     # lightweight checks
-├── .github/workflows/validate.yml          # runs the checks on push / PR
-├── GITHUB_REQUIREMENTS.md                  # publication requirements
-├── CONTRIBUTING.md
-└── .gitignore
+â”œâ”€â”€ skills/session-usage-handoff/skill.md   # the skill (canonical)
+â”œâ”€â”€ skills.md                               # original file, kept unchanged for reference
+â”œâ”€â”€ scripts/validate.py                     # lightweight checks
+â”œâ”€â”€ .github/workflows/validate.yml          # runs the checks on push / PR
+â”œâ”€â”€ GITHUB_REQUIREMENTS.md                  # publication requirements
+â”œâ”€â”€ CONTRIBUTING.md
+â””â”€â”€ .gitignore
 ```
 
 > `skills.md` is the original, pre-restructuring version. Use `skills/session-usage-handoff/skill.md`, which has small consistency fixes (aligned thresholds and progress-file names).
